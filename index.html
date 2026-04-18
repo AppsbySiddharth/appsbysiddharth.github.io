@@ -1,111 +1,65 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apps by Siddharth | Calculator Liquid UI</title>
+    <title>Siddharth Apps - High Performance Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        /* सिद्धार्थ भाई, यहाँ से डिजाइन शुरू होता है */
-        body {
-            background-color: #0d1117; /* एकदम डार्क प्रोफेशनल बैकग्राउंड */
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+        body { 
+            background-color: #f3f6ff; /* Soft professional background */
+            margin: 0; padding: 0; font-family: 'Inter', sans-serif; text-align: center; color: #1e293b;
         }
+        .header { background-color: white; padding: 15px 0; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .logo { font-size: 22px; font-weight: 800; color: #10b981; text-decoration: none; } /* Emerald Green Logo */
+        
+        .hero { padding: 80px 20px 40px; }
+        h1 { font-size: 28px; font-weight: 800; color: #0f172a; margin: 0 auto; max-width: 400px; line-height: 1.2; }
+        .sub-text { color: #64748b; font-size: 15px; margin: 15px 0 30px; }
 
-        .container {
-            text-align: center;
-            padding: 20px;
-            max-width: 400px;
-            width: 90%;
+        .download-btn { 
+            display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+            background-color: #10b981; /* High-quality Green Button */
+            color: white; padding: 18px 50px; border-radius: 50px; text-decoration: none; 
+            font-weight: 700; font-size: 17px; box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+            transition: all 0.3s ease;
         }
+        .download-btn:hover { background-color: #059669; transform: translateY(-3px); box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.4); }
 
-        .brand-name {
-            font-size: 28px;
-            font-weight: bold;
-            color: #58a6ff;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .app-preview { 
+            max-width: 300px; margin: 50px auto; border-radius: 30px; 
+            overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            background: white; padding: 5px; border: 8px solid #0f172a;
         }
+        .app-preview img { width: 100%; border-radius: 20px; display: block; }
 
-        .app-card {
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            transition: transform 0.3s;
-        }
-
-        .app-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .app-icon {
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(135deg, #0081FF, #0045FF);
-            border-radius: 22%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 50px;
-            box-shadow: 0 5px 15px rgba(0,129,255,0.4);
-        }
-
-        h1 { font-size: 22px; margin: 10px 0; }
-        p { color: #8b949e; font-size: 14px; line-height: 1.6; }
-
-        .btn-download {
-            background-color: #238636; /* हरा बटन डाउनलोड के लिए */
-            color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 25px;
-            font-size: 16px;
-            transition: 0.2s;
-        }
-
-        .btn-download:hover { background-color: #2ea043; }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 12px;
-            color: #484f58;
-        }
+        footer { padding: 40px; background: white; border-top: 1px solid #e2e8f0; margin-top: 60px; font-size: 13px; color: #94a3b8; }
+        .dev-name { color: #10b981; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="brand-name">Apps by Siddharth</div>
+    <nav class="header">
+        <a href="#" class="logo">SIDDHARTH APPS</a>
+    </nav>
 
-        <div class="app-card">
-            <div class="app-icon">➕</div> <h1>Calculator - Liquid UI</h1>
-            <p>खूबसूरत एनीमेशन और शानदार डार्क मोड के साथ बना हुआ सिद्धार्थ भाई का अपना कैलकुलेटर।</p>
-            
-            <div style="color: #f0883e; font-size: 12px; margin-top: 10px; font-weight: bold;">
-                Version: 1.0 (Latest)
-            </div>
-
-            <a href="#" class="btn-download">Download APK</a>
-        </div>
-
-        <div class="footer">
-            &copy; 2026 Apps by Siddharth | Made with ❤️ for Android
-        </div>
+    <div class="hero">
+        <h1>Super Fast and Safe Downloading</h1>
+        <p class="sub-text">Experience the next level Liquid UI Calculator with one-click install.</p>
+        
+        <a href="calculator.apk" class="download-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download APK
+        </a>
     </div>
+
+    <div class="app-preview">
+        <img src="screenshot.png" alt="App Screenshot">
+    </div>
+
+    <footer>
+        &copy; 2026 Developed by <span class="dev-name">Siddharth</span>. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
