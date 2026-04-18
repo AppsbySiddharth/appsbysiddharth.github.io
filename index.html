@@ -3,48 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siddharth Apps - High Performance Tools</title>
+    <title>AppsbySiddharth - Official Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        body { 
-            background-color: #f3f6ff; /* Soft professional background */
-            margin: 0; padding: 0; font-family: 'Inter', sans-serif; text-align: center; color: #1e293b;
-        }
-        .header { background-color: white; padding: 15px 0; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-        .logo { font-size: 22px; font-weight: 800; color: #10b981; text-decoration: none; } /* Emerald Green Logo */
-        
-        .hero { padding: 80px 20px 40px; }
-        h1 { font-size: 28px; font-weight: 800; color: #0f172a; margin: 0 auto; max-width: 400px; line-height: 1.2; }
-        .sub-text { color: #64748b; font-size: 15px; margin: 15px 0 30px; }
-
-        .download-btn { 
-            display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-            background-color: #10b981; /* High-quality Green Button */
-            color: white; padding: 18px 50px; border-radius: 50px; text-decoration: none; 
-            font-weight: 700; font-size: 17px; box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
-            transition: all 0.3s ease;
-        }
-        .download-btn:hover { background-color: #059669; transform: translateY(-3px); box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.4); }
-
-        .app-preview { 
-            max-width: 300px; margin: 50px auto; border-radius: 30px; 
-            overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            background: white; padding: 5px; border: 8px solid #0f172a;
-        }
-        .app-preview img { width: 100%; border-radius: 20px; display: block; }
-
-        footer { padding: 40px; background: white; border-top: 1px solid #e2e8f0; margin-top: 60px; font-size: 13px; color: #94a3b8; }
+        body { background-color: #f3f6ff; margin: 0; padding: 0; font-family: 'Inter', sans-serif; text-align: center; color: #1e293b; }
+        .header { background-color: white; padding: 15px 0; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 22px; font-weight: 800; color: #10b981; text-decoration: none; text-transform: uppercase; }
+        .hero { padding: 40px 20px; }
+        .app-icon { width: 100px; height: 100px; border-radius: 22%; margin-bottom: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        h1 { font-size: 26px; font-weight: 800; color: #0f172a; margin: 0 auto; max-width: 400px; }
+        .sub-text { color: #64748b; font-size: 14px; margin: 10px 0 25px; }
+        .download-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: #10b981; color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 10px 15px rgba(16, 185, 129, 0.2); transition: 0.3s; }
+        .download-btn:hover { background-color: #059669; transform: translateY(-2px); }
+        .screenshot-container { max-width: 320px; margin: 40px auto; border-radius: 30px; overflow: hidden; border: 8px solid #0f172a; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2); background: white; }
+        .screenshot-container img { width: 100%; display: block; }
+        footer { padding: 30px; background: white; border-top: 1px solid #e2e8f0; margin-top: 50px; font-size: 12px; color: #94a3b8; }
         .dev-name { color: #10b981; font-weight: bold; }
     </style>
 </head>
 <body>
-
     <nav class="header">
-        <a href="#" class="logo">SIDDHARTH APPS</a>
-    </nav>
+        <a href="#" class="logo">AppsbySiddharth</a> </nav>
 
     <div class="hero">
-        <h1>Super Fast and Safe Downloading</h1>
+        <img src="app_icon.png" alt="App Icon" class="app-icon"> <h1>Super Fast and Safe Downloading</h1>
         <p class="sub-text">Experience the next level Liquid UI Calculator with one-click install.</p>
         
         <a href="calculator.apk" class="download-btn">
@@ -53,13 +35,11 @@
         </a>
     </div>
 
-    <div class="app-preview">
-        <img src="screenshot.png" alt="App Screenshot">
-    </div>
+    <div class="screenshot-container">
+        <img src="screenshot.png" alt="App Screenshot"> </div>
 
     <footer>
         &copy; 2026 Developed by <span class="dev-name">Siddharth</span>. All Rights Reserved.
     </footer>
-
 </body>
 </html>
